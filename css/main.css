@@ -1,0 +1,40 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  color: #444444;
+}
+
+/* HEADER */
+
+#logo {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 1px solid #000000;
+  display: inline;
+  padding: 3px 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1 {
+  color: #000000;
+}
+
+/* FOOTER */
+
+#footer {
+  font-size: 80%;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 15px;
+  text-align: center;
+  margin-top: 225px;
+}
