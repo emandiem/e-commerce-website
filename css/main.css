@@ -8,6 +8,11 @@
 
 /* HEADER */
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 #logo {
   color: #000000;
   font-size: 1.5rem;
@@ -18,12 +23,33 @@
 }
 
 ul {
+  display: flex;
   list-style: none;
   padding-left: 0;
 }
 
+li {
+  margin-left: 3rem;
+}
+
 h1 {
   color: #000000;
+}
+
+/* PRODUCTS */
+
+.product-container {
+  display: grid;
+  grid-template-areas: "img img img img";
+}
+
+figure {
+  margin-left: 0;
+  grid-area: img;
+}
+
+.product-image {
+  width: 90%;
 }
 
 /* FOOTER */
