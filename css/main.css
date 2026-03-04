@@ -6,6 +6,10 @@
   color: #444444;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
 
 header {
@@ -51,12 +55,14 @@ h1 {
 }
 
 figure {
-  margin-left: 0;
   grid-area: img;
+  text-align: center;
 }
 
 .product-image {
-  width: 90%;
+  width: 235px;
+  height: 235px;
+  object-fit: cover; /* different sized images cover the entire container */
 }
 
 /* FOOTER */
