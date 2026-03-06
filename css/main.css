@@ -23,7 +23,7 @@ header {
   color: #000000;
   font-size: 1.5rem;
   font-weight: 700;
-  border: 1px solid #000000;
+  border: 1.75px solid #000000;
   display: inline;
   padding: 3px 10px;
 }
@@ -39,11 +39,6 @@ ul {
   padding-left: 0;
 }
 
-p {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 li {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -52,6 +47,29 @@ li {
 h1 {
   color: #000000;
   margin-left: 3rem;
+}
+
+/* MAIN */
+
+#index-heading {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+#index-heading2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.video {
+  width: 75%;
+  display: flex;
 }
 
 /* PRODUCTS */
