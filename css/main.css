@@ -114,18 +114,6 @@ figure {
   .product-container {
     grid-template-areas: "img img img";
   }
-
-  h1,
-  p,
-  li {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  figure {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
 }
 
 @media screen and (max-width: 920px) {
@@ -134,6 +122,23 @@ figure {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .product-container {
+    grid-template-areas: "img img";
+  }
+
+  h1,
+  p,
+  li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  figure {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 /* FOOTER */
 
 #footer {
