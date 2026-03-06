@@ -15,8 +15,8 @@ a {
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: center; /* centers the header horizontally */
+  position: relative; /* keeps the overall position adjustable */
 }
 
 #logo {
@@ -29,8 +29,8 @@ header {
 }
 
 nav {
-  position: absolute;
-  left: 0;
+  left: 0; /* puts the navigation bar to the left of the header */
+  position: absolute; /* keeps the navigation bar to the left independently*/
 }
 
 ul {
@@ -47,6 +47,26 @@ li {
 h1 {
   color: #000000;
   margin-left: 3rem;
+}
+
+@media screen and (max-width: 1166px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #logo {
+    margin-bottom: 0.7rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  nav {
+    position: relative; /* removes the navigation bar's absolute position */
+  }
 }
 
 /* MAIN */
@@ -68,7 +88,7 @@ p {
 }
 
 .video {
-  width: 75%;
+  width: 100%;
   display: flex;
 }
 
@@ -85,9 +105,21 @@ figure {
 }
 
 .product-image {
-  width: 235px;
-  height: 235px;
+  max-width: 100%;
+  max-height: 235px; /* makes all the images the same height */
   object-fit: cover; /* different sized images cover the entire container */
+}
+
+@media screen and (max-width: 1060px) {
+  .product-container {
+    grid-template-areas: "img img img";
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .product-container {
+    grid-template-areas: "img img";
+  }
 }
 
 /* FOOTER */
