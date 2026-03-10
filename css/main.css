@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  margin: 0;
+}
+
 /* HEADER */
 
 header {
@@ -25,7 +29,7 @@ header {
   font-weight: 700;
   border: 1.75px solid #000000;
   display: inline;
-  padding: 3px 10px;
+  padding: 3px 18px;
 }
 
 nav {
@@ -73,6 +77,25 @@ h1 {
   nav {
     position: relative; /* removes the navigation bar's absolute position */
   }
+
+  #header-cart {
+    position: relative;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #logo,
+  li,
+  p {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  #header-cart {
+    position: relative;
+    margin-left: 18px;
+  }
 }
 
 /* MAIN */
@@ -96,6 +119,14 @@ p {
 .video {
   width: 100%;
   display: flex;
+}
+
+@media screen and (max-width: 550px) {
+  h1,
+  p {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
 }
 
 /* PRODUCTS */
@@ -133,13 +164,6 @@ figure {
     grid-template-areas: "img img";
   }
 
-  h1,
-  p,
-  li {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
   figure {
     margin-left: 0px;
     margin-right: 0px;
@@ -175,7 +199,7 @@ figure {
   color: #ffffff;
   border: none;
   border-radius: 2px;
-  padding: 10px 20px;
+  padding: 18px 20px;
   cursor: pointer;
 }
 
@@ -189,8 +213,8 @@ figure {
   .product-page-description p,
   #add-to-cart {
     margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
   }
 
   .product-page-figure {
