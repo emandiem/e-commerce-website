@@ -139,6 +139,22 @@ figure {
     margin-right: 0px;
   }
 }
+
+/* PRODUCT PAGE */
+
+.product-page-image {
+  width: 50%;
+  margin-left: 0px;
+}
+
+.product-page-figure {
+  display: flex;
+  margin-left: 0px;
+}
+
+product-page-description {
+}
+
 /* FOOTER */
 
 #footer {
