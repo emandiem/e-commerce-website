@@ -143,16 +143,34 @@ figure {
 /* PRODUCT PAGE */
 
 .product-page-image {
-  width: 50%;
-  margin-left: 0px;
+  max-width: 75%;
 }
 
 .product-page-figure {
   display: flex;
   margin-left: 0px;
+  margin-right: 0px;
 }
 
-product-page-description {
+.product-page {
+  display: flex;
+  margin-left: 0px;
+  align-items: flex-start;
+}
+
+.product-page-description h1,
+.product-page-description p {
+  margin-left: 0;
+  margin-right: 3rem;
+}
+
+#add-to-cart {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 /* FOOTER */
