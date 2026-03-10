@@ -173,6 +173,29 @@ figure {
   cursor: pointer;
 }
 
+@media screen and (max-width: 785px) {
+  .product-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-page-description h1,
+  .product-page-description p,
+  #add-to-cart {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .product-page-figure {
+    justify-content: center;
+  }
+
+  .product-page-image {
+    max-width: 100%;
+  }
+}
+
 /* FOOTER */
 
 #footer {
