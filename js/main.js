@@ -1,5 +1,6 @@
 const buttonelement = document.getElementById("add-to-cart");
 const emptyCart = document.getElementById("empty-cart");
+const clearCartButton = document.getElementById("clear-cart");
 
 if (buttonelement) {
   buttonelement.addEventListener("click", function () {
@@ -15,4 +16,12 @@ if (buttonelement) {
 
 if (localStorage.product) {
   emptyCart.innerText = localStorage.product;
+}
+
+if (clearCartButton) {
+  clearCartButton.addEventListener("click", function () {
+    localStorage.removeItem("product"); // removes the product from local storage //
+    emptyCart.innerText = "Empty..."; // updates the cart display //
+    alert("Your cart has been cleared!");
+  });
 }
