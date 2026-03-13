@@ -303,3 +303,10 @@ footer {
   text-align: center;
   margin-top: 225px;
 }
+
+#footer-cart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
